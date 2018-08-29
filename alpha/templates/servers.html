@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block content-title %}
+    <h1>
+        资产管理
+        <small>资产 / 列表</small>
+    </h1>
+{% endblock %}
+{% block content %}
+<div class="serverList-header"></div>
+<div class="serverList-body" id="servers_table">
+    <div class="serverList-content">
+        <table class="table">
+            <thead class="serverList-thead">
+                <tr style="background: #e1e4e5">
+                    <th class="text-center sorting_disabled " rowspan="1" colspan="1" aria-label style="width: 17px;">
+                        <input type="checkbox" name="handleAll" onclick="checkboxclick(this)">
+                    </th>
+                    <th class="serverList-table-th">内网IP</th>
+                    <th>主机名</th>
+                    <th>内存(G)</th>
+                    <th>CPU(核)</th>
+                    <th>数据盘(G)</th>
+                    <th>系统版本</th>
+                    <th>部署应用/服务</th>
+                    <th>到期时间</th>
+                    <th>产品线</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for server in server_list %}
+                    {% if forloop.counter|divisibleby:'2' %}
+                    {# 循环的次数能被2整除 #}
+                        <tr style="background: #f6f6f6">
+                            <th class="text-center sorting_disabled " rowspan="1" colspan="1" aria-label style="width: 17px;">
+                                <input type="checkbox" name="handleHost" value="{{ server.id }}">
+                            </th>
+                            <td>
+                                <a href="{% url 'server_detail' server.id %}">{{ server.IIP }}</a>
+                            </td>
+                            <td>{{ server.HostName }}</td>
+                            <td>{{ server.Mem }}</td>
+                            <td>{{ server.CPU }}</td>
+                            <td>{{ server.DataDisk }}</td>
+                            <td>{{ server.get_SystemInfo_display }}</td>
+                            <td>
+                                <!-- <a href="{% url 'app_detail' %}">{{ server.applications_set.all }}</a> -->
+                                {% for app in server.applications_set.all %}
+                                    <a href="{% url 'app_detail' %}">[{{ app.Name }}]</a>
+                                {% endfor %}
+                            </td>
+                            <td>{{ server.ExpirationDate }}</td>
+                            <td>{{ server.get_ProductItem_display }}</td>
+                            <td class="{{ server.get_Status_display }}">{{ server.get_Status_display }}</td>
+                            <td>
+                                {% if server.Status == 0 %}
+                                {# 主机状态为online时,才可以连接 #}
+                                    <a href="http://alpha.quanshishequ.com:7110/ssh/{{ server.IIP }}" target="_blank" class="btn btn-default btn-xs active" style="background-color: #91cbe8" role="button">连接</a>
+                                {% else %}
+                                    <a href="http:///alpha.quanshishequ.com:7110/ssh/{{ server.IIP }}" target="_blank" class="btn btn-default btn-xs disabled" style="background-color: #91cbe8" role="button">连接</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <th class="text-center sorting_disabled " rowspan="1" colspan="1" aria-label style="width: 17px;">
+                                <input type="checkbox" name="handleHost" value="{{ server.id }}">
+                            </th>
+                            <td>
+                                <a href="{% url 'server_detail' server.id %}">{{ server.IIP }}</a>
+                            </td>
+                            <td>{{ server.HostName }}</td>
+                            <td>{{ server.Mem }}</td>
+                            <td>{{ server.CPU }}</td>
+                            <td>{{ server.DataDisk }}</td>
+                            <td>{{ server.get_SystemInfo_display }}</td>
+                            {# 应用字段最长显示15个字符 #}
+                            <td>
+                                <!-- <a href="{% url 'app_detail' %}">{{ server.applications_set.all }}</a> -->
+                                {% for app in server.applications_set.all %}
+                                    <a href="{% url 'app_detail' %}">[{{ app.Name }}]</a>
+                                {% endfor %}
+                            </td>
+                            <td>{{ server.ExpirationDate }}</td>
+                            <td>{{ server.get_ProductItem_display }}</td>
+                            <td class="{{ server.get_Status_display }}">{{ server.get_Status_display }}</td>
+                            <td>
+                                {% if server.Status == 0 %}
+                                    <a href="http:///alpha.quanshishequ.com:7110/ssh/{{ server.IIP }}" target="_blank" class="btn btn-default btn-xs active" style="background-color: #91cbe8" role="button">连接</a>
+                                {% else %}
+                                    <a href="http:///alpha.quanshishequ.com:7110/ssh/{{ server.IIP }}" target="_blank" class="btn btn-default btn-xs disabled" style="background-color: #91cbe8" role="button">连接</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <form style="text-align: right" action="" method="post">{% csrf_token %}
+            <a class="btn btn-primary active" style="text-align: right " href="{% url 'server_add' %}">添加</a>
+            {# 删除 button 类型为button,默认是submit.submit会刷新整个页面. #}
+            <button type="button" class="btn btn-danger" onclick="delhost()">删除</button>
+        </form>
+    </div>
+    <div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {# 左侧箭头,如果有上一页,就显示左箭头,如果当前是第一页,则不显示左箭头 #}
+                {% if server_list.has_previous %}
+                    <li class="enabled">
+                        <a href="?page={{ server_list.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+                {# 中间页码 #}
+                {% for page_num in server_list.paginator.page_range %}
+                    {% if page_num == server_list.number %}
+                        <li class="active">
+                            <a href="#">{{ page_num }}<span class="sr-only">(current)</span></a>
+                        </li>
+                    {% else %}
+                         <li class="">
+                             <a href="?page={{ page_num }}">{{ page_num }}<span class="sr-only">(current)</span></a>
+                         </li>
+                    {% endif %}
+                {% endfor %}
+                {# 右侧箭头,如果有下一页,就显示右箭头,如果当前是最后一页,则不显示右箭头 #}
+                {% if server_list.has_next %}
+                    <li class="enabled">
+                        <a href="?page={{ server_list.next_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+<div id="servercontent">
+
+</div>
+{% endblock %}
