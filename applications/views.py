@@ -16,7 +16,7 @@ def apps_list(request):
         apps_obj = paginator.page(1)
     except EmptyPage:
         apps_obj = paginator.page(paginator.num_pages)
-    return render(request, 'apps.html', {'app_list': apps_obj})
+    return render(request, 'applications/apps.html', {'app_list': apps_obj})
 
 
 def app_detail(request):
@@ -33,4 +33,4 @@ def app_add(request):
         else:
             return HttpResponseRedirect('/app/apps')
     else:
-        return render(request, 'app_add.html', {'app_field': form})
+        return render(request, 'applications/app_add.html', {'app_field': form})

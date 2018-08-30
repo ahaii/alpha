@@ -26,7 +26,7 @@ def servers_list(request):
         servers_obj = paginator.page(1)
     except EmptyPage:
         servers_obj = paginator.page(paginator.num_pages)
-    return render(request, 'servers.html', {'server_list': servers_obj})
+    return render(request, 'assets/servers.html', {'server_list': servers_obj})
 
 
 # 服务器详情
@@ -42,7 +42,7 @@ def server_detail(request, server_id):
             return HttpResponseRedirect('/assets/servers')
     else:
         form = alpha.forms.ServersModuleForm(instance=server_obj)
-    return render(request, 'server_detail.html', {'server_info': form})
+    return render(request, 'assets/server_detail.html', {'server_info': form})
 
 
 def server_add(request):
@@ -55,7 +55,7 @@ def server_add(request):
         else:
             return HttpResponseRedirect('/assets/servers')
     else:
-        return render(request, 'server_add.html', {'server_field': form})
+        return render(request, 'assets/server_add.html', {'server_field': form})
 
 
 def server_edit(request):

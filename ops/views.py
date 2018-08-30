@@ -23,7 +23,7 @@ def index(request):
 def webssh(request, server_id):
     host_obj = Servers.objects.get(id=server_id)
     host = host_obj.IIP
-    return render(request, 'web_term.html', {'ip': json.dumps(host), 'id': json.dumps(server_id)})
+    return render(request, 'assets/web_term.html', {'ip': json.dumps(host), 'id': json.dumps(server_id)})
 
 
 # accept_websocket()装饰器,可以处理http及websocket请求
@@ -37,7 +37,7 @@ def websocket(request, server_id):
             message = request.GET['message']
             return HttpResponse(message)
         except:
-            return render(request, 'servers.html')
+            return render(request, 'assets/servers.html')
     else:
         # host_obj = Servers.objects.get(id=server_id)
         # host = host_obj.IIP
