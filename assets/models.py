@@ -35,10 +35,10 @@ class Servers(models.Model):
         (6, 'Windows2012'),
     )
 
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
+    id = models.UUIDField(default=uuid.uuid4, editable=False)
     HostName = models.CharField(max_length=20, blank=True, null=True, verbose_name='主机名')
     EIP = models.GenericIPAddressField(blank=True, null=True, verbose_name='公网IP')
-    IIP = models.GenericIPAddressField(verbose_name='内网IP')
+    IIP = models.GenericIPAddressField(primary_key=True, verbose_name='内网IP')
     Status = models.SmallIntegerField(choices=server_status, default=0, verbose_name='状态')
     SystemInfo = models.SmallIntegerField(choices=system_info, default=0, verbose_name='系统信息')
     Mem = models.IntegerField(default=8, verbose_name='内存')

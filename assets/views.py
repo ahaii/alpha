@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 from assets.models import Servers
-import assets.forms
+import alpha.forms
 import assets.models
 import json
 from datetime import date
@@ -36,19 +36,19 @@ def servers_list(request):
 def server_detail(request, server_id):
     server_obj = Servers.objects.get(id=server_id)
     if request.method == "POST":
-        form = assets.forms.ServersModuleForm(request.POST, instance=server_obj)
+        form = alpha.forms.ServersModuleForm(request.POST, instance=server_obj)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
     else:
-        form = assets.forms.ServersModuleForm(instance=server_obj)
+        form = alpha.forms.ServersModuleForm(instance=server_obj)
     return render(request, 'server_detail.html', {'server_info': form})
 
 
 def server_add(request):
-    form = assets.forms.ServersModuleForm()
+    form = alpha.forms.ServersModuleForm()
     if request.method == "POST":
-        form = assets.forms.ServersModuleForm(request.POST)
+        form = alpha.forms.ServersModuleForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
@@ -60,8 +60,7 @@ def server_add(request):
 
 def server_edit(request):
     if request.method == "POST":
-        form = assets.forms.ServersModuleForm(request.POST)
-        print(form.Applications.field)
+        form = alpha.forms.ServersModuleForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
