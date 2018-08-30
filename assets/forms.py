@@ -1,20 +1,20 @@
 #! _*_ coding:utf8 _*_
 
 from django import forms
-from django.forms import ModelForm
+from django.forms import ModelForm, fields
 from django.contrib.admin import widgets
 import assets.models
 
 
-class ServerDetailModuleForm(ModelForm):
+class ServersModuleForm(ModelForm):
     class Meta:
+        # 使用模型Servers中的所有字段
         model = assets.models.Servers
-        # 使用模型中的所有字段
         fields = '__all__'
 
-    applications = forms.IntegerField(
-        label='应用',
-        widget=forms.CheckboxSelectMultiple(
+    Applications = forms.CharField(
+            label='应用',
+        # widget=forms.CheckboxSelectMultiple(
             # choices=(
             #     (0, 'Nginx'),
             #     (1, 'ActiveMQ'),
@@ -40,7 +40,13 @@ class ServerDetailModuleForm(ModelForm):
             #     (21, 'Keepalived'),
             #     (22, 'Haproxy'),
             # )
-        ),
+        # ),
         required=True
     )
+
+
+class ApplicationsModuleForm(ModelForm):
+    class Meta:
+        model = assets.models.Applications
+        fields = '__all__'
 

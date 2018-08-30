@@ -69,32 +69,6 @@ class Applications(models.Model):
         (1, '运行'),
     )
 
-    application_name = (
-        (0, 'Nginx'),
-        (1, 'ActiveMQ'),
-        (2, 'MySQL'),
-        (3, 'ZK'),
-        (4, 'Kafka'),
-        (5, 'Elastic'),
-        (6, 'Redis'),
-        (7, 'Sentinel'),
-        (8, 'Logstash'),
-        (9, 'Kibana'),
-        (10, 'PHP'),
-        (11, 'Mongo'),
-        (12, 'Dubbo'),
-        (13, 'Zabbix'),
-        (14, 'Jenkins'),
-        (15, 'Tomcat'),
-        (16, 'Confluence'),
-        (17, 'Gitlab'),
-        (18, 'FastDFS'),
-        (19, 'Zentao'),
-        (20, 'Nexus'),
-        (21, 'Keepalived'),
-        (22, 'Haproxy'),
-    )
-
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
     Name = models.CharField(max_length=20, verbose_name='应用名')
     Version = models.DecimalField(max_digits=6, decimal_places=2, verbose_name='版本号')

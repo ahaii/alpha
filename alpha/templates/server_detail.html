@@ -7,7 +7,7 @@
 {% endblock %}
 {% block content %}
 <body>
-    <form class="form-horizontal" action="" method="post">{% csrf_token %}
+    <form id='server_detail' class="form-horizontal" action="/assets/edit/" method="post">{% csrf_token %}
         {% for field in server_info %}
             <div class="form-group">
              {#field.label 获取字段名称#}
@@ -17,13 +17,13 @@
                 {% if field.label == '到期时间' %}
                     <input name="expirdate" class="serverExpirDate" type="text" placeholder="请选择日期">
                 {% elif field.label == '应用' %}
-                    <select multiple="multiple" class=" col-sm-3 serverAppMultipleSelect">
-                        <option value="1">Nginx</option>
-                        <option value="2">Tomcat</option>
-                        <option value="3">MySQL</option>
-                        <option value="4">MongoDB</option>
-                        <option value="5">Redis</option>
-                        <option value="6">Confluence</option>
+                    <select multiple="multiple" name='applications' class="serverAppMultipleSelect" style="width: 130px">
+                        <option value="Nginx">Nginx</option>
+                        <option value="Tomcat">Tomcat</option>
+                        <option value="MySQL">MySQL</option>
+                        <option value="MongoDB">MongoDB</option>
+                        <option value="Redis">Redis</option>
+                        <option value="Confluence">Confluence</option>
                     </select>
                 {% else %}
                     {{ field }}
@@ -31,6 +31,7 @@
                 </div>
             </div>
         {% endfor %}
+        <!-- <button type="button" class="btn btn-primary" onclick="savehost()">保存</button> -->
         <button type="submit" class="btn btn-primary">保存</button>
     </form>
 </body>

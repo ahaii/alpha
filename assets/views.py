@@ -12,6 +12,7 @@ from assets.models import Servers
 import assets.forms
 import assets.models
 import json
+from datetime import date
 
 
 # 服务器列表
@@ -35,24 +36,40 @@ def servers_list(request):
 def server_detail(request, server_id):
     server_obj = Servers.objects.get(id=server_id)
     if request.method == "POST":
-        form = assets.forms.ServerDetailModuleForm(request.POST, instance=server_obj)
+        form = assets.forms.ServersModuleForm(request.POST, instance=server_obj)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
     else:
-        form = assets.forms.ServerDetailModuleForm(instance=server_obj)
+        form = assets.forms.ServersModuleForm(instance=server_obj)
     return render(request, 'server_detail.html', {'server_info': form})
 
 
 def server_add(request):
-    form = assets.forms.ServerDetailModuleForm()
+    form = assets.forms.ServersModuleForm()
     if request.method == "POST":
-        form = assets.forms.ServerDetailModuleForm(request.POST)
+        form = assets.forms.ServersModuleForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
+        else:
+            return HttpResponseRedirect('/assets/servers')
     else:
         return render(request, 'server_add.html', {'server_field': form})
+
+
+def server_edit(request):
+    if request.method == "POST":
+        form = assets.forms.ServersModuleForm(request.POST)
+        print(form.Applications.field)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/assets/servers')
+        else:
+            print(form.errors)
+            return HttpResponseRedirect('/assets/servers')
+    else:
+        return HttpResponseRedirect('/assets/servers')
 
 
 # 解决ajax post提交数据出现403

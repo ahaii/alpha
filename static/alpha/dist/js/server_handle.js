@@ -3,7 +3,7 @@
  */
 
 /**
- * used for server_list html
+ * used for server_list del host
  */
 
 function checkboxclick(checkbox){
@@ -24,12 +24,12 @@ function delhost() {
     if (confirm('是否要删除该主机,然后跑路?') == true) {
         $.ajax({
             type: 'POST',
-            url:'/assets/del/',
-            dataType:'json',
+            url: '/assets/del/',
+            dataType: 'json',
             // 注意JSON.stringify()方法,将javascript对象转换为字符串,便于后端接收处理.
-            data:{hostid:JSON.stringify(hostId_arry)},
+            data: {hostid:JSON.stringify(hostId_arry)},
             // traditional默认为false，开启后可以禁止jquery深度序列化参数对象(后端获取参数是，多加了'[]')
-            traditional:true,
+            traditional: true,
             success:function(data){
                 if (data['result'] == 'ok') {
                     location.reload(true);
@@ -42,6 +42,20 @@ function delhost() {
     }else{
         return false;
     }
+}
+
+/**
+ *  used for server_detail save host
+ */
+
+function savehost(){
+    $.ajax({
+        type: 'POST',
+        url : '/assets/add/',
+        dataType: 'json',
+        // serialize()将获取的form数据序列化成'a=1&b=2&c=3&d=4&e=5'格式
+        data: $('#server_detail').serialize()
+    });
 }
 
 /**

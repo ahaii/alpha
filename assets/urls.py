@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'server_detail/([0-9a-zA-Z\-]{36})/$', assets.views.server_detail, name='server_detail'),
     url(r'add/', assets.views.server_add, name='server_add'),
     url(r'del/', assets.views.server_del, name='server_del'),
+    url(r'edit/', assets.views.server_edit, name='server_edit'),
 ]
