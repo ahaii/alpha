@@ -53,6 +53,7 @@ def server_add(request):
             form.save()
             return HttpResponseRedirect('/assets/servers')
         else:
+            print(form.errors)
             return HttpResponseRedirect('/assets/servers')
     else:
         return render(request, 'assets/server_add.html', {'server_field': form})

@@ -9,12 +9,12 @@ import assets.models
 class ServersModuleForm(ModelForm):
     Applications = forms.CharField(
         label='应用',
-        widget= forms.CheckboxSelectMultiple(
+        widget=forms.CheckboxSelectMultiple(
             choices=(
-                (0, 'Nginx'),
-                (1, 'Tomcat'),
-                (2, 'MySQL'),
-                (3, 'Redis')
+                ('Nginx', 'Nginx'),
+                ('Tomcat', 'Tomcat'),
+                ('MySQL', 'MySQL'),
+                ('Redis', 'Redis')
             )
         )
     )

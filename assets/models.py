@@ -65,12 +65,12 @@ class Servers(models.Model):
 class Applications(models.Model):
 
     application_status = (
-        (0, '停止'),
-        (1, '运行'),
+        (0, 'ON'),
+        (1, 'OFF'),
     )
 
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
-    Name = models.CharField(max_length=20, verbose_name='应用名')
+    id = models.UUIDField(default=uuid.uuid4, editable=False)
+    Name = models.CharField(max_length=20, primary_key=True, verbose_name='应用名')
     Version = models.DecimalField(max_digits=6, decimal_places=2, verbose_name='版本号')
     InstallDir = models.CharField(max_length=256, verbose_name='安装目录')
     Port = models.IntegerField(verbose_name='端口')
