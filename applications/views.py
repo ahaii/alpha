@@ -10,8 +10,16 @@ def apps_list(request):
     return render(request, 'applications/apps.html', {'app_list': apps_obj})
 
 
-def app_detail(request):
-    pass
+def app_detail(request, app_id):
+    app_obj = Applications.objects.get(id=app_id)
+    if request.method == "POST":
+        form = alpha.forms.ApplicationsModuleForm(request.POST, instance=app_obj)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/app/apps')
+    else:
+        form = alpha.forms.ServersModuleForm(instance=app_obj)
+    return render(request, 'applications/app_detail.html', {'app_info': form})
 
 
 def app_add(request):

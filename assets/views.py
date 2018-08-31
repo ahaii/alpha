@@ -42,7 +42,7 @@ def server_detail(request, server_id):
             return HttpResponseRedirect('/assets/servers')
     else:
         form = alpha.forms.ServersModuleForm(instance=server_obj)
-    return render(request, 'assets/server_detail.html', {'server_info': form})
+    return render(request, 'assets/server_detail.html', {'server_info': form, 'server_id': server_id})
 
 
 def server_add(request):
@@ -59,9 +59,10 @@ def server_add(request):
         return render(request, 'assets/server_add.html', {'server_field': form})
 
 
-def server_edit(request):
+def server_update(request, server_id):
     if request.method == "POST":
-        form = alpha.forms.ServersModuleForm(request.POST)
+        server_obj = Servers.objects.get(id=server_id)
+        form = alpha.forms.ServersModuleForm(request.POST, instance=server_obj)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/assets/servers')
