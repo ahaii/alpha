@@ -18,8 +18,22 @@ def app_detail(request, app_id):
             form.save()
             return HttpResponseRedirect('/app/apps')
     else:
-        form = alpha.forms.ServersModuleForm(instance=app_obj)
-    return render(request, 'applications/app_detail.html', {'app_info': form})
+        form = alpha.forms.ApplicationsModuleForm(instance=app_obj)
+    return render(request, 'applications/app_detail.html', {'app_info': form, 'app_id': app_id})
+
+
+def app_update(request, app_id):
+    if request.method == "POST":
+        app_obj = Applications.objects.get(id=app_id)
+        form = alpha.forms.ApplicationsModuleForm(request.POST, instance=app_obj)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/app/apps')
+        else:
+            print(form.errors)
+            return HttpResponseRedirect('/app/apps')
+    else:
+        return HttpResponseRedirect('/app/apps')
 
 
 def app_add(request):

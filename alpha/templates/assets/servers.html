@@ -45,7 +45,7 @@
                             <td>{{ server.DataDisk }}</td>
                             <td>{{ server.get_SystemInfo_display }}</td>
                             <td>
-                                {% for app in server.applications_set.all %}
+                                {% for app in server.Applications.all %}
                                     <a href="{% url 'app_detail' app.id %}">[{{ app.Name }}]</a>
                                 {% endfor %}
                             </td>
@@ -76,7 +76,7 @@
                             <td>{{ server.get_SystemInfo_display }}</td>
                             {# 应用字段最长显示15个字符 #}
                             <td>
-                                {% for app in server.applications_set.all %}
+                                {% for app in server.Applications.all %}
                                     <a href="{% url 'app_detail' app.id %}">[{{ app.Name }}]</a>
                                 {% endfor %}
                             </td>

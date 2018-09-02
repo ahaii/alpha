@@ -35,16 +35,17 @@ class Servers(models.Model):
         (6, 'Windows2012'),
     )
 
-    id = models.UUIDField(default=uuid.uuid4, editable=False)
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
     HostName = models.CharField(max_length=20, blank=True, null=True, verbose_name='主机名')
     EIP = models.GenericIPAddressField(blank=True, null=True, verbose_name='公网IP')
-    IIP = models.GenericIPAddressField(primary_key=True, verbose_name='内网IP')
+    IIP = models.GenericIPAddressField(verbose_name='内网IP')
     Status = models.SmallIntegerField(choices=server_status, default=0, verbose_name='状态')
     SystemInfo = models.SmallIntegerField(choices=system_info, default=0, verbose_name='系统信息')
     Mem = models.IntegerField(default=8, verbose_name='内存')
     CPU = models.IntegerField(default=4)
     SysDisk = models.IntegerField(default=50, verbose_name='系统盘')
     DataDisk = models.IntegerField(default=500, verbose_name='数据盘')
+    Applications = models.ManyToManyField('Applications', verbose_name='应用')
     ProductItem = models.SmallIntegerField(choices=product_item, default=6, verbose_name='产品线')
     ExpirationDate = models.DateField(default=timezone.now, verbose_name='到期时间')
     # verbose_name,别名,在admin后台展示时用到
@@ -69,12 +70,11 @@ class Applications(models.Model):
         (1, 'OFF'),
     )
 
-    id = models.UUIDField(default=uuid.uuid4, editable=False)
-    Name = models.CharField(max_length=20, primary_key=True, verbose_name='应用名')
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
+    Name = models.CharField(max_length=20, verbose_name='应用名')
     Version = models.DecimalField(max_digits=6, decimal_places=2, verbose_name='版本号')
     InstallDir = models.CharField(max_length=256, verbose_name='安装目录')
     Port = models.IntegerField(verbose_name='端口')
-    IIP = models.ManyToManyField(Servers, verbose_name='主机')
     Status = models.IntegerField(choices=application_status, default=1, verbose_name='状态')
     ProductItem = models.SmallIntegerField(choices=product_item, default=6, verbose_name='产品线')
 

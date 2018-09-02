@@ -12,7 +12,6 @@ from assets.models import Servers
 import alpha.forms
 import assets.models
 import json
-from datetime import date
 
 
 # 服务器列表

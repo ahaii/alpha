@@ -8,8 +8,8 @@
 {% block content %}
 <body>
     {{ form.media }}
-    <form class="form-horizontal" action="" method="post">{% csrf_token %}
-        {% for field in server_info %}
+    <form class="form-horizontal" action="/app/update/{{ app_id }}/" method="post">{% csrf_token %}
+        {% for field in app_info %}
             <div class="form-group">
                  {#field.label 获取字段名称#}
                 <label class="col-sm-1 control-label">{{ field.label }}</label>
