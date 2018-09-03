@@ -89,3 +89,17 @@ class Applications(models.Model):
     class Meta:
         verbose_name_plural = '应用'
 
+
+class User(models.Model):
+
+    role = (
+        (0, 'user'),
+        (1, 'admin')
+    )
+
+    Name = models.CharField(max_length=20, verbose_name='名字')
+    Email = models.EmailField(verbose_name='邮箱')
+    Head_img = models.ImageField(verbose_name='用户头像', height_field=160, width_field=160,
+                                 default='static/alpha/uploads/UserHeadImg/default.jpg',
+                                 upload_to='static/alpha/uploads/UserHeadImg')
+    Role = models.SmallIntegerField(choices=role, default=0)

@@ -14,9 +14,9 @@ import json
 
 
 # 服务器列表
-def servers_list(request):
+def servers_list(request, number=10):
     servers = Servers.objects.all().order_by('id')
-    paginator = Paginator(servers, 10)
+    paginator = Paginator(servers, number)
     page = request.GET.get('page')
     try:
         servers_obj = paginator.page(page)
