@@ -14,7 +14,8 @@ class ServersModuleForm(ModelForm):
     # 自定义ExpirationDate样式,覆盖掉之前的,新加自定义日历样式
     ExpirationDate = forms.DateField(
         widget=forms.DateTimeInput(
-            attrs={'type': 'date'}
+            attrs={'type': 'date',
+                   }
         ),
         label='到期时间'
     )

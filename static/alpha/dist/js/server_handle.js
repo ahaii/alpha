@@ -46,7 +46,6 @@ function delhost() {
 
 /**
  *  used for server_detail save host
- */
 
 function savehost(){
     $.ajax({
@@ -57,6 +56,8 @@ function savehost(){
         data: $('#server_detail').serialize()
     });
 }
+ */
+
 
 /**
  *  used for server_detail expirdate
