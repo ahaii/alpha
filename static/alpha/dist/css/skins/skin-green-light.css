@@ -3,7 +3,7 @@
  * -----------
  */
 .skin-green-light .main-header .navbar {
-  background-color: #00a65a;
+  background-color: #499ef3;
 }
 .skin-green-light .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -43,7 +43,7 @@
   }
 }
 .skin-green-light .main-header .logo {
-  background-color: #00a65a;
+  background-color: #499ef3;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }

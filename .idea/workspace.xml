@@ -2,11 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62fa7c05-617f-4e0b-b87f-64b5eb9b2044" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/alpha/dist/img/user2-160x160.jpg" afterPath="$PROJECT_DIR$/static/alpha/dist/img/user2-160x160.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/build/build.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/build/build_standalone.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/less/datetimepicker.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_day_meridian.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_decade.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_full.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_hour.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_hour_meridian.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_month.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/bootstrap-datetimepicker/screenshot/standard_year.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/_all-skins.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/_all-skins.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-black-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-black-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-black.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-black.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-blue-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-blue-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-purple-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-purple-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-red-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-red-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-yellow-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-yellow-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-yellow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/adminlte-options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/advice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/browsers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/components.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/dependencies.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/download.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/implementations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/plugins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/include/upgrade.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/build/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/docs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/documentation/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/es5-shim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/flatdoc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/legacy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/theme-white/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/theme-white/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/docs/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/templates/applications/apps.html" afterPath="$PROJECT_DIR$/alpha/templates/applications/apps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/templates/assets/servers.html" afterPath="$PROJECT_DIR$/alpha/templates/assets/servers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/templates/base.html" afterPath="$PROJECT_DIR$/alpha/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green-light.css" afterPath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green-light.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green.min.css" afterPath="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green.min.css" />
     </list>
     <ignored path="alpha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +122,20 @@
       <file leaf-file-name="servers.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alpha/templates/assets/servers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skin-green-light.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green-light.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.6470585">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -57,20 +157,10 @@
         <entry file="file://$PROJECT_DIR$/assets/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,43 +175,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app_handle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/alpha/dist/js/app_handle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="37" selection-end-column="10" />
-              <folding>
-                <element signature="n#!!doc;n#checkboxclick#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apps.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apps.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alpha/templates/applications/apps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3576159">
+            <state vertical-scroll-proportion="-11.875">
               <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alpha/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.5">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8557692">
+              <caret line="978" column="7" selection-start-line="978" selection-start-column="7" selection-end-line="978" selection-end-column="7" />
+              <folding>
+                <element signature="n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skin-green.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -146,9 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/alpha/templates/index.html" />
         <option value="$PROJECT_DIR$/static/alpha/bower_components/bootstrap/less/tables.less" />
         <option value="$PROJECT_DIR$/static/alpha/build/bootstrap-less/tables.less" />
         <option value="$PROJECT_DIR$/static/alpha/dist/css/AdminLTE.min.css" />
@@ -194,9 +271,12 @@
         <option value="$PROJECT_DIR$/assets/views.py" />
         <option value="$PROJECT_DIR$/alpha/forms.py" />
         <option value="$PROJECT_DIR$/static/alpha/dist/js/server_handle.js" />
-        <option value="$PROJECT_DIR$/alpha/templates/base.html" />
-        <option value="$PROJECT_DIR$/alpha/templates/assets/servers.html" />
         <option value="$PROJECT_DIR$/alpha/templates/applications/apps.html" />
+        <option value="$PROJECT_DIR$/static/alpha/dist/css/skins/_all-skins.min.css" />
+        <option value="$PROJECT_DIR$/alpha/templates/assets/servers.html" />
+        <option value="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green.min.css" />
+        <option value="$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green-light.css" />
+        <option value="$PROJECT_DIR$/alpha/templates/base.html" />
       </list>
     </option>
   </component>
@@ -332,54 +412,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alpha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -479,7 +511,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.30610237" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -880,7 +912,13 @@
       <option name="project" value="LOCAL" />
       <updated>1535958441543</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改资源列表样式">
+      <created>1535959999873</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535959999873</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -958,7 +996,8 @@
     <MESSAGE value="add mutilple-select staticfile" />
     <MESSAGE value="修改到期时间显示格式" />
     <MESSAGE value="添加app删除接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加app删除接口" />
+    <MESSAGE value="修改资源列表样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改资源列表样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,38 +1006,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/alpha/templates/applications/app_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/dist/js/server_handle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ops/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/alpha/dist/js/adminlte.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1128,95 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/theme-white/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="308" column="14" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/respond.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/es5-shim.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/legacy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="1244" selection-start-line="19" selection-start-column="1238" selection-end-line="19" selection-end-column="1244" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/flatdoc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="410" column="62" selection-start-line="410" selection-start-column="56" selection-end-line="410" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/docs/assets/flatdoc/theme-white/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="376" column="47" selection-start-line="376" selection-start-column="46" selection-end-line="376" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/alpha/multiple-select/multiple-select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alpha/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1301,16 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alpha/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1318,6 +1226,24 @@
           <folding>
             <element signature="e#24#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/templates/applications/apps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,27 +1255,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.5">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alpha/templates/assets/servers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/templates/applications/apps.html">
+    <entry file="file://$PROJECT_DIR$/static/alpha/dist/css/skins/skin-green-light.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3576159">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state vertical-scroll-proportion="-12.6470585">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8557692">
+          <caret line="978" column="7" selection-start-line="978" selection-start-column="7" selection-end-line="978" selection-end-column="7" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
