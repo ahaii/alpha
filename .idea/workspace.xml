@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62fa7c05-617f-4e0b-b87f-64b5eb9b2044" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/forms.py" afterPath="$PROJECT_DIR$/alpha/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/templates/applications/apps.html" afterPath="$PROJECT_DIR$/alpha/templates/applications/apps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/alpha/dist/js/server_handle.js" afterPath="$PROJECT_DIR$/static/alpha/dist/js/server_handle.js" />
     </list>
     <ignored path="alpha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -800,7 +797,13 @@
       <option name="project" value="LOCAL" />
       <updated>1535956428582</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加app删除接口">
+      <created>1535958432916</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535958432916</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
