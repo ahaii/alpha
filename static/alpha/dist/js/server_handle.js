@@ -60,8 +60,6 @@ function savehost(){
 
 /**
  *  used for server_detail expirdate
- */
-
 
 $(".serverExpirDate").datetimepicker({
     format: 'yyyy-mm-dd',
@@ -75,9 +73,11 @@ $(".serverExpirDate").datetimepicker({
     clearBtn: true,
     forceParse: true
 });
+*/
 
 /**
  * used for server_detail apps multiple-select
+
+ $('.serverAppMultipleSelect').multipleSelect();
  */
 
-$('.serverAppMultipleSelect').multipleSelect();

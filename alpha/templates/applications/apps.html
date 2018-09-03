@@ -59,7 +59,7 @@
                     {% else %}
                         <tr>
                             <th class="text-center sorting_disabled " rowspan="1" colspan="1" aria-label style="width: 17px;">
-                                <input type="checkbox" name="handleHost" value="{{ app.id }}">
+                                <input type="checkbox" name="handleApp" value="{{ app.id }}">
                             </th>
                             <td>
                                 <a href="{% url 'app_detail' app.id %}">{{ app.Name }}</a>
@@ -91,7 +91,7 @@
         <form style="text-align: right" action="" method="post">{% csrf_token %}
             <a class="btn btn-primary active" style="text-align: right " href="{% url 'app_add' %}">添加</a>
             {# 删除 button 类型为button,默认是submit.submit会刷新整个页面. #}
-            <button type="button" class="btn btn-danger" onclick="delhost()">删除</button>
+            <button type="button" class="btn btn-danger" onclick="delapp()">删除</button>
         </form>
     </div>
     <div>

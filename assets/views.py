@@ -10,7 +10,6 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 from assets.models import Servers
 import alpha.forms
-import assets.models
 import json
 
 
@@ -52,7 +51,6 @@ def server_add(request):
             form.save()
             return HttpResponseRedirect('/assets/servers')
         else:
-            print(form.errors)
             return HttpResponseRedirect('/assets/servers')
     else:
         return render(request, 'assets/server_add.html', {'server_field': form})
@@ -80,7 +78,7 @@ def server_del(request):
         hostid_obj = request.POST.get('hostid')
         hostid_list = json.loads(hostid_obj)
         for hostid in hostid_list:
-            assets.models.Servers.objects.filter(id=hostid).delete()
+            Servers.objects.filter(id=hostid).delete()
         # 定义返回数据,用于ajax回调
         return JsonResponse({'result': 'ok'})
     else:

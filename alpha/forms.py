@@ -11,7 +11,7 @@ class ServersModuleForm(ModelForm):
         model = assets.models.Servers
         fields = '__all__'
 
-    # 自定义date样式,覆盖掉之前的,新加自定义日历样式
+    # 自定义ExpirationDate样式,覆盖掉之前的,新加自定义日历样式
     ExpirationDate = forms.DateField(
         widget=forms.DateTimeInput(
             attrs={'type': 'date'}

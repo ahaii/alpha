@@ -1,8 +1,11 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render
 
 # Create your views here.
+from django.http import HttpResponseRedirect, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 from assets.models import Applications
 import alpha.forms
+import json
 
 
 def apps_list(request):
@@ -30,7 +33,6 @@ def app_update(request, app_id):
             form.save()
             return HttpResponseRedirect('/app/apps')
         else:
-            print(form.errors)
             return HttpResponseRedirect('/app/apps')
     else:
         return HttpResponseRedirect('/app/apps')
@@ -49,7 +51,18 @@ def app_add(request):
         return render(request, 'applications/app_add.html', {'app_field': form})
 
 
-
+@csrf_exempt
+def app_del(request):
+    if request.is_ajax():
+        # 获取ajax提交来的data
+        appid_obj = request.POST.get('appid')
+        appid_list = json.loads(appid_obj)
+        for appid in appid_list:
+            Applications.objects.filter(id=appid).delete()
+        # 定义返回数据,用于ajax回调
+        return JsonResponse({'result': 'ok'})
+    else:
+        return HttpResponseRedirect('/app/apps')
 
 
 
