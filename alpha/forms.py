@@ -10,9 +10,6 @@ class ServersModuleForm(ModelForm):
         # 使用模型Servers中的所有字段
         model = assets.models.Servers
         fields = '__all__'
-        labels = {
-            'ExpirationDate': '到期时间'
-        }
 
     # 自定义date样式,覆盖掉之前的,新加自定义日历样式
     ExpirationDate = forms.DateField(
