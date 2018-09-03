@@ -2,7 +2,6 @@
 
 from django import forms
 from django.forms import ModelForm
-from django.contrib.admin import widgets
 import assets.models
 
 
@@ -11,6 +10,17 @@ class ServersModuleForm(ModelForm):
         # 使用模型Servers中的所有字段
         model = assets.models.Servers
         fields = '__all__'
+        labels = {
+            'ExpirationDate': '到期时间'
+        }
+
+    # 自定义date样式,覆盖掉之前的,新加自定义日历样式
+    ExpirationDate = forms.DateField(
+        widget=forms.DateTimeInput(
+            attrs={'type': 'date'}
+        ),
+        label='到期时间'
+    )
 
 
 class ApplicationsModuleForm(ModelForm):
@@ -43,35 +53,3 @@ class ApplicationsModuleForm(ModelForm):
                 )
             )
         }
-
-        # Applications = forms.CharField(
-        # label='应用',
-        # widget=forms.CheckboxSelectMultiple(
-        # choices=(
-        #     (0, 'Nginx'),
-        #     (1, 'ActiveMQ'),
-        #     (2, 'MySQL'),
-        #     (3, 'ZK'),
-        #     (4, 'Kafka'),
-        #     (5, 'Elastic'),
-        #     (6, 'Redis'),
-        #     (7, 'Sentinel'),
-        #     (8, 'Logstash'),
-        #     (9, 'Kibana'),
-        #     (10, 'PHP'),
-        #     (11, 'Mongo'),
-        #     (12, 'Dubbo'),
-        #     (13, 'Zabbix'),
-        #     (14, 'Jenkins'),
-        #     (15, 'Tomcat'),
-        #     (16, 'Confluence'),
-        #     (17, 'Gitlab'),
-        #     (18, 'FastDFS'),
-        #     (19, 'Zentao'),
-        #     (20, 'Nexus'),
-        #     (21, 'Keepalived'),
-        #     (22, 'Haproxy'),
-        # )
-        # ),
-        # required=True
-        # )

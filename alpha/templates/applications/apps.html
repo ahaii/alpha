@@ -37,7 +37,7 @@
                                 <a href="{% url 'app_detail' app.id %}">{{ app.Name }}</a>
                             </td>
                             <td>
-                                {% for iip in  app.IIP.all %}
+                                {% for iip in  app.servers_set.all %}
                                     {{ iip }}
                                 {% endfor %}
                             </td>
@@ -65,7 +65,7 @@
                                 <a href="{% url 'app_detail' app.id %}">{{ app.Name }}</a>
                             </td>
                             <td>
-                                {% for iip in  app.IIP.all %}
+                                {% for iip in  app.servers_set.all %}
                                     {{ iip }}
                                 {% endfor %}
                             </td>
