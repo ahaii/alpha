@@ -19,6 +19,9 @@ function delhost() {
     $('input[name="handleHost"]:checkbox').each(function(){
         if ($(this).is(":checked") == true) {
             hostId_arry.push($(this).val());
+        }else{
+            alert('尚未选择主机!');
+            return false;
         }
     });
     if (confirm('是否要删除该主机,然后跑路?') == true) {

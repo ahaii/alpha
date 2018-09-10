@@ -103,3 +103,4 @@ class User(models.Model):
                                  default='static/alpha/uploads/UserHeadImg/default.jpg',
                                  upload_to='static/alpha/uploads/UserHeadImg')
     Role = models.SmallIntegerField(choices=role, default=0)
+
