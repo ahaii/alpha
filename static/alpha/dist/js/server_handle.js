@@ -14,16 +14,18 @@ function checkboxclick(checkbox){
     }
 }
 
+
 function delhost() {
     var hostId_arry = [];
     $('input[name="handleHost"]:checkbox').each(function(){
         if ($(this).is(":checked") == true) {
             hostId_arry.push($(this).val());
-        }else{
-            alert('尚未选择主机!');
-            return false;
         }
     });
+    if (hostId_arry === undefined || hostId_arry.length ==0){
+        alert('未选择任何主机!');
+        return false;
+    }
     if (confirm('是否要删除该主机,然后跑路?') == true) {
         $.ajax({
             type: 'POST',
@@ -46,6 +48,7 @@ function delhost() {
         return false;
     }
 }
+
 
 /**
  *  used for server_detail save host
