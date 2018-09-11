@@ -17,6 +17,10 @@ function delapp() {
             appId_arry.push($(this).val());
         }
     });
+    if (appId_arry ===  undefined || appId_arry.length == 0){
+        alert('未选择任何应用!');
+        return false;
+    }
     if (confirm('是否要删除该应用,然后跑路?') == true) {
         $.ajax({
             type: 'POST',
